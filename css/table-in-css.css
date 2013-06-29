@@ -1,0 +1,187 @@
+/* CSS for the Mobility Assignment 1 by SID 12765223 */
+
+/* General text design */
+body 	{font-size:100%; 
+		font-family: 'Iceland', cursive;
+		min-width: 300px;
+		}
+		
+h1 		{font-size:2.5em;}
+
+p 		{font-size:1em; 
+		color:#333333}
+
+/* How the calculation display looks to the public*/	
+	
+input {
+	border-color: #dcdcdc;
+	border-style: solid;
+	border-width: 6px;
+	padding: 8px;
+	width:90%;
+	font-family: 'Iceland', cursive;
+	font-size:2.5em;
+	margin-bottom:10px;
+	
+}
+
+/* How the calculation buttons look to the public*/
+.calbutton {
+	-moz-box-shadow:inset -3px -2px 27px 0px #ffffff;
+	-webkit-box-shadow:inset -3px -2px 27px 0px #ffffff;
+	box-shadow:inset -3px -2px 27px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	border:6px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family: 'Iceland', cursive;
+	font-size:2.5em;
+	font-weight:bold; 
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	width:100%;
+	height:100%;	
+}
+.calbutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.calbutton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+/* The container which is using a similar style to the buttons*/
+DIV.base-layer {
+  	text-align: center; 
+  	-moz-box-shadow:inset -3px -2px 27px 0px #ffffff;
+	-webkit-box-shadow:inset -3px -2px 27px 0px #ffffff;
+	box-shadow:inset -3px -2px 27px 0px #ffffff;
+	background:-webkit-gradient( linear, left bottom, left top, color-stop(0.05, #f0f), color-stop(1, #ff99ff) );
+	background:-moz-linear-gradient( center bottom, #f0f 5%, #ff99ff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	border:6px solid #ff99ff;
+	display:inline-block;
+	color:#777777;
+	width:96%;
+	height:auto;
+	margin-left:2%;
+	margin-right:2%;
+	
+}
+
+/*Divides the rows up*/
+DIV.table-row {
+   
+  margin-top: 0; 
+  margin-right: auto; margin-bottom: 0; margin-left: auto;
+  padding: 0; text-align: center; width: 91%; 
+}
+
+/* Create a box for each button to sit on (4 Boxes to a line) */
+
+DIV.left-square {
+  border: none; 
+  float: left;
+  margin:0.5%;
+  width: 19%;
+  height: 13%;
+}
+
+DIV.left-square-x2 {
+  border: none; 
+  float: left; 
+  margin:0.5%; 
+  width: 39%;
+  height: 13%;
+}
+
+DIV.right-square {
+  border: none; 
+  float: right;
+  margin:0.5%; 
+  width: 19%;
+  height: 13%;
+}
+
+DIV.right-square-x2 {
+  border: none; 
+  float: right; 
+  margin:0.5%; 
+  width: 39%;
+  height: 13%;
+}
+
+/* End of Row */
+DIV.end-row {
+  clear: both; 
+  margin: 0; 
+  padding: 0; 
+  width: auto;
+}
+@media screen and (max-width: 600px) {
+
+body	{padding:0;}
+h1 		{font-size:2em;}	
+.calbutton {font-size:2em;}
+input {	font-size:2.5em;
+		margin-bottom:10px;}
+DIV.left-square {height: 12%;}
+DIV.left-square-x2 {height: 12%;}
+DIV.right-square {height: 12%;}
+DIV.right-square-x2 {height: 12%;}	
+	
+DIV.base-layer {width:97%;
+				margin-left:0%;
+				margin-right:3%;
+				}
+}
+
+@media screen and (max-width: 485px) {
+
+body	{padding:0;}
+h1 		{font-size:1.5em;}	
+.calbutton {font-size:1.5em;}
+input {	font-size:2em;
+		margin-bottom:7px;}
+DIV.left-square {height: 10%;}
+DIV.left-square-x2 {height: 10%;}
+DIV.right-square {height: 10%;}
+DIV.right-square-x2 {height: 10%;}	
+	
+DIV.base-layer {width:97%;
+				margin-left:0%;
+				margin-right:3%;
+				}
+}
+@media screen and (max-width: 350px) {
+
+body	{padding:0;}
+h1 		{font-size:1em;}	
+.calbutton {font-size:1em;}
+input {	font-size:1.5em;
+		margin-bottom:5px;}
+DIV.left-square {height: 8%;}
+DIV.left-square-x2 {height: 8%;}
+DIV.right-square {height: 8%;}
+DIV.right-square-x2 {height: 8%;}	
+	
+DIV.base-layer {border:0px;
+				width:97%;
+				margin-left:0%;
+				margin-right:3%;
+				}
+}
